@@ -1,0 +1,21 @@
+[Unit]
+Description=frp client
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+
+TimeoutStartSec=infinity
+ExecStartPre=/bin/sleep 30
+Restart=on-failure
+RestartSec=30s
+
+# 启动frps的命令，需修改为您的frps的安装路径
+ExecStart=/usr/local/bin/frps/frps -c /usr/local/bin/frps/frps.toml
+
+[Install]
+WantedBy=multi-user.target
+##启动服务
+#systemctl daemon-reload
+#systemctl start frps
