@@ -12,7 +12,7 @@ Restart=on-failure
 RestartSec=30s
 
 # 启动frps的命令，需修改为您的frps的安装路径
-ExecStart=/usr/local/bin/frps/frps -c /usr/local/bin/frps/frps.toml
+ExecStart=/usr/local/frp/frps/frps -c /usr/local/frp/frps/frps.toml
 
 [Install]
 WantedBy=multi-user.target
