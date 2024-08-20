@@ -1,4 +1,4 @@
-serverAddr = "sz.alittlepig.cc"
+serverAddr = "sz.tinybear.cc"
 serverPort = 5443
 auth.method= "token"
 auth.token = "fix me"
